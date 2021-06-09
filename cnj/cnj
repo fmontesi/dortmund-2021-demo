@@ -1,0 +1,27 @@
+#!/usr/bin/env jolie
+
+from console import Console
+
+interface ChuckNorrisIOInterface {
+RequestResponse: random( undefined )( undefined )
+}
+
+service ChuckNorrisJoke {
+	embed Console as console
+
+	outputPort chuck {
+		location: "socket://api.chucknorris.io:443/"
+		protocol: https {
+			osc.random << {
+				method = "get"
+				alias = "jokes/random"
+			}
+		}
+		interfaces: ChuckNorrisIOInterface
+	}
+
+	main {
+		random@chuck()( joke )
+		println@console( "🥋 " + joke.value )(  )
+	}
+}

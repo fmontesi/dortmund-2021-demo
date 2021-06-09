@@ -1,0 +1,15 @@
+{
+	"discountCodes": {
+		"Jolie": 60,
+		"Microservices": 60,
+		"JSON": 20
+	},
+	"products": {
+		"coffee": {
+			"price": 3.0
+		},
+		"water": {
+			"price": 2.0
+		}
+	}
+}

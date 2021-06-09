@@ -1,0 +1,15 @@
+{
+	"discountCodes": {
+		"Jolie": 30,
+		"Java": 25,
+		"JavaScript": 10
+	},
+	"products": {
+		"coffee": {
+			"price": 2.0
+		},
+		"water": {
+			"price": 1.0
+		}
+	}
+}

@@ -1,0 +1,5 @@
+{
+	"name": "Expensive Store",
+	"location": "socket://localhost:8002",
+	"dbPath": "store2-db.json"
+}
